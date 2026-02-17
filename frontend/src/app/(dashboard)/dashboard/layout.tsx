@@ -10,16 +10,15 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "~/components/ui/sidebar";
-//import { AppSidebar } from "~/components/sidebar/app-sidebar";
 import { Separator } from "~/components/ui/separator";
 import {
   Breadcrumb,
-  BreadcrumbItem,
+  BreadcrumbItem, 
   BreadcrumbList,
 } from "~/components/ui/breadcrumb";
 //import BreadcrumbPageClient from "~/components/sidebar/breadcrumb-page-client";
 import { auth } from "~/lib/auth";
-import AppSidebar from "~/components/sidebar/app-sidebar";
+import { AppSidebar } from "~/components/sidebar/app-sidebar";
 
 export const metadata: Metadata = {
   title: "AI Image Generator",
