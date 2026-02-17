@@ -22,7 +22,7 @@ export async function AppSidebar() {
             <SidebarContent className="px-3">
                 <MobileSidebarClose />
                 <SidebarGroup>
-                    <SidebarGroupLabel className="text-primary mt-6 mb-8 flex flex-col items-start justify-start">
+                    <SidebarGroupLabel className="text-primary mt-2 md:mt-0 mb-8 flex flex-col items-start justify-start">
                        <Link href="/" className="mb-1 flex cursor-pointer items-center gap-2">
                         <Sparkles className="text-primary h-6 w-6" />
                            <p className="from-primary to-primary/70 bg-gradient-to-r bg-clip-text text-2xl font-bold tracking-light text-transparent">
