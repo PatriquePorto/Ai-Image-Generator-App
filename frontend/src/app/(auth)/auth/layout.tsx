@@ -113,7 +113,9 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
             </div>
 
             {/* Auth Form Container */}
-            <div>{children}</div>
+            <div className="">
+              {children}
+            </div>
 
             {/* Footer Link */}
             <p className="mt-6 text-center text-sm text-slate-600">

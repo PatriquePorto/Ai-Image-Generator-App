@@ -15,6 +15,8 @@ import { User, Sparkles, Settings } from "lucide-react"
 import Link from "next/link"
 import SidebarMenuItems from "./sidebar-menu-items"
 import MobileSidebarClose from "./mobile-sidebar-close"
+import Credits from "./credits"
+import Upgrade from "./upgrade"
 
 export async function AppSidebar() {
     return (
@@ -22,7 +24,7 @@ export async function AppSidebar() {
             <SidebarContent className="px-3">
                 <MobileSidebarClose />
                 <SidebarGroup>
-                    <SidebarGroupLabel className="text-primary mt-2 md:mt-0 mb-8 flex flex-col items-start justify-start">
+                    <SidebarGroupLabel className="text-primary mt-5 mb-8 flex flex-col items-start justify-start">
                        <Link href="/" className="mb-1 flex cursor-pointer items-center gap-2">
                         <Sparkles className="text-primary h-6 w-6" />
                            <p className="from-primary to-primary/70 bg-gradient-to-r bg-clip-text text-2xl font-bold tracking-light text-transparent">
@@ -41,7 +43,10 @@ export async function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
             <SidebarFooter className="bg-muted/30 border-t p-3">
-        <div className="mb-3 flex w-full items-center justify-center gap-2 text-xs"> </div>
+        <div className="mb-3 flex w-full items-center justify-center gap-2 text-xs"> 
+            <Credits />
+            <Upgrade />
+        </div>
         <UserButton
           variant="outline"
           className="border-muted-foreground/20 hover:border-primary/50 w-full transition-colors"
